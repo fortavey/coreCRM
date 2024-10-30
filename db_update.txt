@@ -1,0 +1,7 @@
+UPDATE fort_options SET option_value = replace(option_value, 'https://koralweb.com', 'http://localhost:8888') WHERE option_name = 'home' OR option_name = 'siteurl';
+
+UPDATE fort_posts SET guid = replace(guid, 'https://koralweb.com', 'http://localhost:8888');
+
+UPDATE fort_posts SET post_content = replace(post_content, 'https://koralweb.com', 'http://localhost:8888');
+
+UPDATE fort_postmeta SET meta_value = replace(meta_value,'https://koralweb.com', 'http://localhost:8888');
